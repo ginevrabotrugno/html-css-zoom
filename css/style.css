@@ -17,7 +17,13 @@ a {
     color: #ffffff;
 }
 
-/* regole header */
+
+
+
+
+
+
+/* regole view-bar */
 
 #view-bar {
     width: 100%;
@@ -39,14 +45,17 @@ a {
 
 
 
-/* regole main */
 
-#container {
+
+
+
+
+/* regole conteuto principale */
+
+#wrapper {
     height: calc(100vh - 50px);
     margin-top: 50px;
     position: relative;
-    /* DEBUG */
-    background-color: violet;
 }
 
 .flex-container {
@@ -80,8 +89,50 @@ a {
 
 
 
+
+
+
+
+
+/* regole toolbar */
+
 .toolbar {
     width: 100%;
     height: 100px;
     background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 10px; */
+    /* DEBUG */
+    /* width: 200px; */
+    /* height: 100%; */
+    /* background-color: aquamarine; */
+}
+
+.icon   {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.icon a {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button, .fa-chevron-up {
+    font-size: smaller;
+    padding: 4px;
+}
+
