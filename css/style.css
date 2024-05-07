@@ -36,7 +36,8 @@ a {
     left: 0;
 }
 
-.icons a {
+#view-bar a {
+    font-size: small;
     background-color: rgb(97, 95, 96, 0.7);
     border-radius: 2px;
     padding: 5px;
@@ -55,22 +56,20 @@ a {
 #wrapper {
     height: calc(100vh - 50px);
     margin-top: 50px;
-    position: relative;
 }
 
 .flex-container {
-    height:calc(100% - 100px);
-    padding: 25px 50px;
+    height:calc(100% - 80px);
+    padding-top: 25px;
     display: flex;
     justify-content: center;
     gap: 5px;
-    align-items: center;
     flex-wrap: wrap;
     overflow-y: auto;
 }
 
 .user {
-    width: 250px;
+    width: calc(100% / 7);
     position: relative;
 }
 
@@ -97,24 +96,16 @@ a {
 /* regole toolbar */
 
 .toolbar {
-    width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: #222222;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 
 .tools {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    /* gap: 10px; */
-    /* DEBUG */
-    /* width: 200px; */
-    height: 100%;
-    /* background-color: aquamarine; */
 }
 
 .icon   {
