@@ -19,7 +19,7 @@ a {
 
 /* regole header */
 
-header {
+#view-bar {
     width: 100%;
     height: 50px;
     display: flex;
@@ -30,9 +30,49 @@ header {
     left: 0;
 }
 
-.view-bar a {
+.icons a {
     background-color: rgb(97, 95, 96, 0.7);
     border-radius: 2px;
     padding: 5px;
     margin-right: 5px;
+}
+
+
+
+/* regole main */
+
+#container {
+    height: calc(100vh - 50px);
+    margin-top: 50px;
+    position: relative;
+    /* DEBUG */
+    background-color: violet;
+}
+
+.flex-container {
+    height:calc(100% - 100px);
+    padding: 25px 50px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.user {
+    /* DEBUG */
+    width: 250px;
+    min-height: 150px;
+    background-color: red;
+    border: solid violet 2px;
+}
+
+.toolbar {
+    width: 100%;
+    height: 100px;
+    background-color: #222222;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
